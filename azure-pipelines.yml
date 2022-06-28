@@ -57,6 +57,7 @@ stages:
           - task: KubernetesManifest@0
             inputs:
               action: 'createSecret'
+              kubernetesServiceConnection: 'murali'
               namespace: 'default'
               secretType: 'dockerRegistry'
               secretName: '$(acrsecret)'
