@@ -60,7 +60,7 @@ stages:
               namespace: 'default'
               secretType: 'dockerRegistry'
               secretName: '$(acrsecret)'
-              dockerRegistryEndpoint: 'murali'
+              dockerRegistryEndpoint: 'azuregcr'
           - task: replacetokens@3
             displayName: Replace Tokens
             inputs:
