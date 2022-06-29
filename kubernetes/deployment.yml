@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: sampleapp 
-          image: sampleapp
+          image: murali.azurecr.io/sampleapp
           ports:
           - containerPort: 80
